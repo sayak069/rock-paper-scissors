@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Comic Neue', cursive;
+    text-align: center;
+    font-weight: 400;
+}
+body{
+    height: 100vh;
+    background-color: lavender;
+    display: grid;
+    place-content: center;
+}
+/* conatiner */
+#container{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+/* heading section */
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 5rem;
+    color: brown;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 3rem;
+    color: crimson;
+    font-weight: 700;
+}
+/* button section */
+#btn-box{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#btn-box button{
+    box-sizing: content-box;
+    width: 90px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.08s ease;
+    border: 2px solid black;
+    background: pink;
+}
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgb(171, 171, 171);
+    opacity: 0.9;
+}
+/* result section */
+#result{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+#result p{
+    font-size: 2rem;
+    font-weight: 600;
+}
+/* play again */
+#again{
+    padding: 5px 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    background: palegreen;
+}
+/* footer */
+footer{
+    font-size: 1.3rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    background: lightblue;
+    width: 100%;
+}

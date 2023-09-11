@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/90ed2192c8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to the game</h1>
-    <h3>Kindly open console to play the game</h3>
-    <p>Scissor beats paper</p>
-    <p>paper beats rock</p>
-    <p>rock beats Scissor</p>
-    <script src="script.js"></script>
+    <div id="container">
+        <div id="head-box">
+            <h1>Rock Paper Scissors</h1>
+            <h2>First to score 5 wins!</h2>
+        </div>
+        <div id="btn-box">
+            <button type="button" value="rock" class="option">Rock</button>
+            <button type="button" value="paper" class="option">Paper</button>
+            <button type="button" value="scissor" class="option">Scissor</button>
+        </div>
+        <div id="result">
+            <p id="pts"></p>
+            <p id="resPara">Choose your weapon</p>
+        </div>
+        <button id="again">Play Again!</button>
+    </div>
+    <footer>
+        Made by Sayak
+        <a href="https://github.com/sayak069" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </footer>
 </body>
 </html>
